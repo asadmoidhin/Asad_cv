@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asad Moidhin | Professional Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-bg {
+            background-color: #0f172a;
+            background-image: radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                              radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+                              radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+        }
+
+        .skill-tag {
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-bold text-xl tracking-tight text-slate-800">AM.</span>
+            <div class="space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#contact" class="px-4 py-2 bg-slate-900 text-white rounded-full hover:bg-blue-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center text-white">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Asad Moidhin</h1>
+            <p class="text-blue-300 text-lg md:text-xl font-medium uppercase tracking-widest mb-8">University Student & Aspiring Developer</p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-light">
+                <span class="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">
+                    <i class="fas fa-phone text-blue-400"></i> +91 9880794782
+                </span>
+                <span class="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">
+                    <i class="fas fa-envelope text-blue-400"></i> asadmoidhin@gmail.com
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
+        
+        <!-- Summary Section -->
+        <section id="about" class="glass-card p-8 md:p-12 rounded-3xl shadow-xl mb-12">
+            <div class="max-w-3xl">
+                <h2 class="text-2xl font-bold mb-4 gradient-text">Executive Summary</h2>
+                <p class="text-lg text-slate-600 leading-relaxed italic">
+                    "Hardworking University Student seeking employment. A strong leader who works well under pressure and exudes positivity."
+                </p>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Left Column: Experience/Projects -->
+            <div class="lg:col-span-2 space-y-8">
+                <section id="projects" class="glass-card p-8 rounded-3xl shadow-lg border border-gray-100">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="p-2 bg-blue-50 text-blue-600 rounded-lg">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-slate-800">Featured Projects</h2>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="group">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-800 group-hover:text-blue-600 transition">Student Helper Portal</h3>
+                            <div class="flex gap-2">
+                                <span class="text-xs font-bold px-2 py-1 bg-blue-100 text-blue-700 rounded">Python</span>
+                                <span class="text-xs font-bold px-2 py-1 bg-amber-100 text-amber-700 rounded">JSON</span>
+                                <span class="text-xs font-bold px-2 py-1 bg-emerald-100 text-emerald-700 rounded">HTML</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            A Python-based web application designed to streamline academic management. Integrates subject file organization, deadline tracking, class scheduling, and an in-browser Python compiler.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start gap-2 text-sm text-slate-500">
+                                <i class="fas fa-check-circle text-blue-400 mt-1"></i>
+                                Centralized dashboard for academic workflows.
+                            </li>
+                            <li class="flex items-start gap-2 text-sm text-slate-500">
+                                <i class="fas fa-check-circle text-blue-400 mt-1"></i>
+                                Practical implementation of data structures and file handling.
+                            </li>
+                            <li class="flex items-start gap-2 text-sm text-slate-500">
+                                <i class="fas fa-check-circle text-blue-400 mt-1"></i>
+                                Full backend-frontend integration for seamless web deployment.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="glass-card p-8 rounded-3xl shadow-lg border border-gray-100">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="p-2 bg-purple-50 text-purple-600 rounded-lg">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-slate-800">Education</h2>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="relative pl-8 border-l-2 border-purple-100">
+                            <div class="absolute w-4 h-4 bg-purple-500 rounded-full -left-[9px] top-1 border-4 border-white"></div>
+                            <h3 class="font-bold text-slate-800">Higher Secondary</h3>
+                            <p class="text-slate-600">CFAL (Centre For Advanced Learning)</p>
+                        </div>
+                        <div class="relative pl-8 border-l-2 border-purple-100">
+                            <div class="absolute w-4 h-4 bg-gray-300 rounded-full -left-[9px] top-1 border-4 border-white"></div>
+                            <h3 class="font-bold text-slate-800">SSLC</h3>
+                            <p class="text-slate-600">Cambridge School</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Skills & Languages -->
+            <div class="space-y-8">
+                <section id="skills" class="glass-card p-8 rounded-3xl shadow-lg border border-gray-100">
+                    <h2 class="text-xl font-bold text-slate-800 mb-6">Technical Skills</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-slate-700">Python</span>
+                                <span class="text-xs text-slate-400 italic">Novice</span>
+                            </div>
+                            <div class="w-full bg-gray-100 rounded-full h-1.5">
+                                <div class="bg-blue-600 h-1.5 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-slate-700">C++</span>
+                                <span class="text-xs text-slate-400 italic">Beginner</span>
+                            </div>
+                            <div class="w-full bg-gray-100 rounded-full h-1.5">
+                                <div class="bg-slate-400 h-1.5 rounded-full" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-slate-700">HTML/CSS</span>
+                                <span class="text-xs text-slate-400 italic">Beginner</span>
+                            </div>
+                            <div class="w-full bg-gray-100 rounded-full h-1.5">
+                                <div class="bg-orange-400 h-1.5 rounded-full" style="width: 35%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="text-xl font-bold text-slate-800 mb-6 mt-10">Soft Skills</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag bg-white border border-gray-200 px-3 py-1 rounded-lg text-sm text-slate-600">Communication</span>
+                        <span class="skill-tag bg-white border border-gray-200 px-3 py-1 rounded-lg text-sm text-slate-600">Teamwork</span>
+                        <span class="skill-tag bg-white border border-gray-200 px-3 py-1 rounded-lg text-sm text-slate-600">Problem Solving</span>
+                        <span class="skill-tag bg-white border border-gray-200 px-3 py-1 rounded-lg text-sm text-slate-600">Leadership</span>
+                    </div>
+                </section>
+
+                <section class="glass-card p-8 rounded-3xl shadow-lg border border-gray-100">
+                    <h2 class="text-xl font-bold text-slate-800 mb-6">Languages</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-3 bg-gray-50 rounded-2xl text-center">
+                            <span class="block text-xs text-slate-400 uppercase font-bold tracking-tighter">Native/Fluent</span>
+                            <span class="text-slate-700 font-medium">English</span>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-2xl text-center">
+                            <span class="block text-xs text-slate-400 uppercase font-bold tracking-tighter">Advanced</span>
+                            <span class="text-slate-700 font-medium">Hindi</span>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-2xl text-center">
+                            <span class="block text-xs text-slate-400 uppercase font-bold tracking-tighter">Intermediate</span>
+                            <span class="text-slate-700 font-medium">Kannada</span>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-2xl text-center">
+                            <span class="block text-xs text-slate-400 uppercase font-bold tracking-tighter">Intermediate</span>
+                            <span class="text-slate-700 font-medium">Malayalam</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="my-20 glass-card p-12 rounded-[3rem] shadow-2xl text-center bg-slate-900 text-white border-none overflow-hidden relative">
+            <div class="absolute inset-0 opacity-10 pointer-events-none">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+            <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+            <p class="text-slate-400 mb-8 max-w-lg mx-auto">Open to internship opportunities and collaborative projects. Feel free to reach out via phone or email.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="mailto:asadmoidhin@gmail.com" class="px-8 py-4 bg-blue-600 rounded-2xl font-bold hover:bg-blue-500 transition shadow-lg shadow-blue-900/40">Send an Email</a>
+                <a href="tel:+919880794782" class="px-8 py-4 bg-white/10 border border-white/20 rounded-2xl font-bold hover:bg-white/20 transition">Call Me Directly</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pb-10 text-center text-slate-400 text-sm">
+        <p>&copy; <span id="year"></span> Asad Moidhin. Built with HTML, CSS, & Tailwind.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Navigation transparency effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg
